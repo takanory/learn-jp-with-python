@@ -78,6 +78,7 @@ def text_to_speech():
     if text:
         hiragana, romaji = add_reading(text)
         st.write(f"#### {hiragana}", unsafe_allow_html=True)
+        st.write(f"#### {romaji}", unsafe_allow_html=True)
 
         ssml_text = f'<speak><prosody rate="slow">{text}</prosody></speak>'
         result = polly.synthesize_speech(
