@@ -1,6 +1,6 @@
-boto3==1.35.23
-deepl==1.19.1
-jaconv==0.3.4
-streamlit==1.38.0
-SudachiDict-core==20240716
-SudachiPy==0.6.8
+boto3==1.37.1
+deepl==1.21.0
+jaconv==0.4.0
+streamlit==1.42.2
+SudachiDict-core==20250129
+SudachiPy==0.6.10
