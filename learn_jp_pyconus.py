@@ -74,6 +74,9 @@ def kanji_reading_with_level():
 
     日本語を勉強する
     """)
+
+    st.markdown("[The Python Tutorial](https://docs.python.org/3.13/tutorial/index.html)")
+
     levels = {"N1": "1", "N2": "2", "N3": "3", "N4": "4", "N5": "5", "No level": None}
     text = st.text_input("Text:")
     alphabet = st.toggle("Alphabet(romaji) annotation(default: Hiragana)")
