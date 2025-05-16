@@ -77,13 +77,13 @@ def kanji_reading_with_level():
 
     st.markdown("[The Python Tutorial](https://docs.python.org/3.13/tutorial/index.html)")
 
-    levels = {"N1": "1", "N2": "2", "N3": "3", "N4": "4", "N5": "5", "No level": None}
+    levels = {"N1": "1", "N2": "2", "N3": "3", "N4": "4", "N5": "5"}
     text = st.text_input("Text:")
     alphabet = st.toggle("Alphabet(romaji) annotation(default: Hiragana)")
-    level = st.pills("Kanji level", levels, selection_mode="single", default="No level")
+    level = st.pills("Kanji level", levels, selection_mode="single")
     if text:
         text = text.replace(" ", "")
-        level_value = levels[level]
+        level_value = levels.get(level)
         result = add_reading_with_level(text, level_value, alphabet)
         result = result.replace("\n", " ")
         st.write(f"#### {result}", unsafe_allow_html=True)
