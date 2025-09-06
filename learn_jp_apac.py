@@ -90,7 +90,7 @@ def text_to_speech():
 
 def main():
     st.title("Learn Japanese🇯🇵 with Python🐍")
-    st.write("PyCon APAC 2024 ver.")
+    st.write("PyCon APAC ver.")
 
     kana_to_romaji()
     st.write("------")
